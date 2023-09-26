@@ -1,24 +1,24 @@
 package org.example.core;
 
-import org.example.core.employees.Employee;
+import org.example.core.calculatingSalaries.CalculatingSalaries;
 
 import java.util.ArrayList;
 
 public class Company {
-    ArrayList<Employee> employees;
+    ArrayList<CalculatingSalaries> salaries;
 
     public Company() {
 
     }
 
-    public Company(ArrayList<Employee> employees) {
-        this.employees = employees;
+    public Company(ArrayList<CalculatingSalaries> salaries) {
+        this.salaries = salaries;
     }
 
-    public Float calcSalary() {
+    public Float calculatingTotalSalary() {
         float sum = 0.0f;
-        for (Employee employee : employees) {
-            sum += employee.takeSalary();
+        for (CalculatingSalaries salaries1 : salaries) {
+            sum += salaries1.takeSalary();
         }
         return sum;
     }

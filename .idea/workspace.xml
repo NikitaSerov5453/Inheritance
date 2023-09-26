@@ -4,26 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45895bd4-ea74-433c-adc5-81d8aaf90143" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/core/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/core/Journal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/core/MonthlySalary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/core/MyArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/core/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/core/employees/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/core/employees/FixedRate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/core/employees/HourlyRate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/core/employees/PieceworkRate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/core/employees/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/views/View.java" afterDir="false" />
+    <list default="true" id="45895bd4-ea74-433c-adc5-81d8aaf90143" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/CalculatingSalaries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/core/employees/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/Journal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/Journal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/employees/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/employees/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/employees/FixedRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/FixedRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/employees/HourlyRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/HourlyRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/employees/PieceworkRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/PieceworkRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/employees/Staff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/views/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/views/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,14 +46,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/dante5453/Downloads/Encapsulation"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dante5453/Downloads/Encapsulation&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
@@ -89,6 +83,14 @@
       <option name="presentableId" value="Default" />
       <updated>1695449265152</updated>
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1695683391658</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695683391658</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,5 +103,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>

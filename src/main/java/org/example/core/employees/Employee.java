@@ -1,49 +1,48 @@
 package org.example.core.employees;
 
-public abstract class Employee {
-    protected String name;
-    protected String surname;
-    protected String patronymic;
+import org.example.core.Journal;
+import org.example.core.calculatingSalaries.FixedRate;
+import org.example.core.calculatingSalaries.HourlyRate;
+import org.example.core.calculatingSalaries.PieceworkRate;
 
-    public Employee(String name, String surname, String patronymic) {
-        this.name = name;
-        this.surname = surname;
-        this.patronymic = patronymic;
-    }
+public class Employee {
 
     public Employee() {
+
     }
 
-    public String getName() {
-        return name;
+    public FixedRate fixRateEmployee(Human human, int workDay, float salaryInDay, boolean offshore) {
+        FixedRate fixedRate = new FixedRate();
+        fixedRate.workDay(workDay);
+        fixedRate.setSalaryInDay(salaryInDay);
+        fixedRate.setHuman(human);
+        fixedRate.setOffshore(offshore);
+        Journal.setStaff(fixedRate);
+
+        return fixedRate;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public HourlyRate hourlyRateEmployee(Human human, int hour, float salaryInHour, boolean offshore) {
+        HourlyRate hourlyRate = new HourlyRate();
+        hourlyRate.setHour(hour);
+        hourlyRate.setSalaryInHour(salaryInHour);
+        hourlyRate.setHuman(human);
+        hourlyRate.setOffshore(offshore);
+        Journal.setStaff(hourlyRate);
+
+        return hourlyRate;
     }
 
-    public String getSurname() {
-        return surname;
-    }
+    public PieceworkRate pieceworkRate(Human human, int task, float salaryInTask, boolean offshore){
+        PieceworkRate pieceworkRate = new PieceworkRate();
+        pieceworkRate.setTask(task);
+        pieceworkRate.setSalaryInTask(salaryInTask);
+        pieceworkRate.setHuman(human);
+        pieceworkRate.setOffshore(offshore);
+        Journal.setStaff(pieceworkRate);
 
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public String getPatronymic() {
-        return patronymic;
-    }
-
-    public void setPatronymic(String patronymic) {
-        this.patronymic = patronymic;
-    }
-
-    public float takeSalary(){
-        return 0;
+        return pieceworkRate;
     }
 
 
-    public int compareTo(Employee o2) {
-        return compareTo(o2);
-    }
 }
