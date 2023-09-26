@@ -25,9 +25,9 @@ public class HourlyRate extends CalculatingSalaries {
 
     public int tax() {
         if (getHuman().getNumberOfChildren() == 0) {
-            return 25;
+            return this.tax = 25;
         } else {
-            return 20;
+            return this.tax = 20;
         }
     }
 
@@ -35,10 +35,8 @@ public class HourlyRate extends CalculatingSalaries {
     public int taxOffshore() {
         if (isOffshore()) {
             return this.tax = 0;
-        }else if (getHuman().getNumberOfChildren() == 0) {
-            return this.tax = 25;
         } else {
-            return this.tax = 20;
+            return tax();
         }
     }
 

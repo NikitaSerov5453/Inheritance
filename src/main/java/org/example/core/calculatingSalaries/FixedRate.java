@@ -35,10 +35,8 @@ public class FixedRate extends CalculatingSalaries {
     public int taxOffshore() {
         if (isOffshore()) {
             return this.tax = 0;
-        }else if (getHuman().getNumberOfChildren() == 0) {
-            return this.tax = 25;
         } else {
-            return this.tax = 20;
+            return tax();
         }
     }
 

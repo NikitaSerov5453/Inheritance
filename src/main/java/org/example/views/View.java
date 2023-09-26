@@ -60,7 +60,7 @@ public class View {
         }
     }
 
-    public void printStuff4(ArrayList<CalculatingSalaries> arrayList) {
+    public void printStuffPrize(ArrayList<CalculatingSalaries> arrayList) {
         System.out.format("%25s%25s%15s%25s", "ФИО", "Налог", "Сумма", "К оплате(Рубли/Тугрики)\n");
         for (CalculatingSalaries calculatingSalaries : arrayList) {
             calculatingSalaries.taxOffshore();
