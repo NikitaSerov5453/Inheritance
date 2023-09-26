@@ -4,7 +4,7 @@ import org.example.core.employees.Human;
 
 public class HourlyRate extends CalculatingSalaries {
 
-    private boolean offshore;
+    private boolean offshore = true;
     private int tugrik = 36;
     private String paymentType = "Почасовая";
     private int hour;
@@ -35,7 +35,7 @@ public class HourlyRate extends CalculatingSalaries {
 
     @Override
     public boolean isOffshore() {
-        return super.isOffshore();
+        return offshore;
     }
 
     @Override

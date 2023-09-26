@@ -10,7 +10,7 @@ import org.example.core.employees.Human;
 
 public class FixedRate extends CalculatingSalaries {
 
-    private boolean offshore;
+    private boolean offshore = true;
     private String paymentType = "Фиксированая ставка";
     private int workDay;
     private float salaryInDay;
@@ -32,7 +32,7 @@ public class FixedRate extends CalculatingSalaries {
 
     @Override
     public boolean isOffshore() {
-        return super.isOffshore();
+        return offshore;
     }
 
     @Override

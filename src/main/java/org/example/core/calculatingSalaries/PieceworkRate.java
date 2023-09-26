@@ -4,7 +4,7 @@ import org.example.core.employees.Human;
 
 public class PieceworkRate extends CalculatingSalaries {
 
-    private boolean offshore;
+    private boolean offshore = true;
     private String paymentType = "Сдельная";
     private int task;
     private float salaryInTask;
@@ -25,7 +25,7 @@ public class PieceworkRate extends CalculatingSalaries {
 
     @Override
     public boolean isOffshore() {
-        return super.isOffshore();
+        return offshore;
     }
 
     @Override
