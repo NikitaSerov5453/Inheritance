@@ -30,24 +30,7 @@ public class View {
     /**
      * task 2/3/4
      */
-//    public void printStuffTax(ArrayList<CalculatingSalaries> arrayList) {
-//        System.out.format("%25s%25s%15s%25s", "ФИО", "Налог", "Сумма", "К оплате\n");
-//        float sum = 0.0f;
-//        float sumTax = 0.0f;
-//        for (CalculatingSalaries calculatingSalaries : arrayList) {
-//            System.out.format("%25s%25s%15s%25s",
-//                    calculatingSalaries.getHuman(),
-//                    calculatingSalaries.getTax() + "%",
-//                    calculatingSalaries.takeSalary(),
-//                    calculatingSalaries.takeSalaryTax() + "\n");
-//            sum += calculatingSalaries.takeSalary();
-//            sumTax += calculatingSalaries.takeSalaryTax();
-//
-//        }
-//        System.out.format("%25s%25s%15s%25s", "Итого", "", sum, sumTax);
-//    }
-
-    public void printStuff2(ArrayList<CalculatingSalaries> arrayList) {
+    public void printStuffTugriks(ArrayList<CalculatingSalaries> arrayList) {
         System.out.format("%25s%25s%15s%25s", "ФИО", "Налог", "Сумма", "К оплате(Рубли/Тугрики)\n");
         for (CalculatingSalaries calculatingSalaries : arrayList) {
             calculatingSalaries.tax();
@@ -64,7 +47,7 @@ public class View {
      * task 5
      */
 
-    public void printStuff3(ArrayList<CalculatingSalaries> arrayList) {
+    public void printStuffOffshore(ArrayList<CalculatingSalaries> arrayList) {
         System.out.format("%25s%25s%15s%25s", "ФИО", "Налог", "Сумма", "К оплате(Рубли/Тугрики)\n");
         for (CalculatingSalaries calculatingSalaries : arrayList) {
             calculatingSalaries.taxOffshore();
@@ -77,4 +60,16 @@ public class View {
         }
     }
 
+    public void printStuff4(ArrayList<CalculatingSalaries> arrayList) {
+        System.out.format("%25s%25s%15s%25s", "ФИО", "Налог", "Сумма", "К оплате(Рубли/Тугрики)\n");
+        for (CalculatingSalaries calculatingSalaries : arrayList) {
+            calculatingSalaries.taxOffshore();
+            System.out.format("%25s%25s%15s%25s",
+                    calculatingSalaries.getHuman(),
+                    calculatingSalaries.getTax() + "%",
+                    calculatingSalaries.takeSalary(),
+                    calculatingSalaries.takeSalaryTax() +
+                            calculatingSalaries.takeSalaryTugrik() + "\n");
+        }
+    }
 }

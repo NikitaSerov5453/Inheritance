@@ -50,10 +50,10 @@ public class Main {
         view.printStuff(Journal.getStaff());
         System.out.println();
         System.out.println();
-        view.printStuff2(Journal.getStaff());
+        view.printStuffTugriks(Journal.getStaff());
         System.out.println();
         System.out.println();
-        view.printStuff3(Journal.getStaff());
+        view.printStuffOffshore(Journal.getStaff());
 
 //        Employee employee1 = employeeMyArray.findMax(new Comparator<Employee>() {
 //            @Override
