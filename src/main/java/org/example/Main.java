@@ -37,14 +37,14 @@ public class Main {
         Human human = new Human("Nikita", "Serov", "Andreevic", 0);
         Human human4 = new Human("Nikita", "Serov", "Andreevic", 1);
         Human human1 = new Human("a", "a", "a", 1);
-        Human human2 = new Human("b", "b", "b", 0);
-        Human human3 = new Human("c", "c", "c", 1);
+        Human human2 = new Human("час", "по", "овая", 0);
+        Human human3 = new Human("ль", "сде", "ная", 1);
         Employee employee = new Employee();
         FixedRate fixedRate = employee.fixRateEmployee(human, 15, 3000, true);
         FixedRate fixedRate2 = employee.fixRateEmployee(human4, 15, 3000, false);
         FixedRate fixedRate1 = employee.fixRateEmployee(human1, 14, 5000,false);
         HourlyRate hourlyRate = employee.hourlyRateEmployee(human2,164, 319.25f, false);
-        PieceworkRate pieceworkRate = employee.pieceworkRate(human3, 5, 10000, false);
+        PieceworkRate pieceworkRate = employee.pieceworkRate(human3, 5, 10000, true);
 
 
         view.printStuff(Journal.getStaff());
@@ -53,6 +53,7 @@ public class Main {
         view.printStuff2(Journal.getStaff());
         System.out.println();
         System.out.println();
+        view.printStuff3(Journal.getStaff());
 
 //        Employee employee1 = employeeMyArray.findMax(new Comparator<Employee>() {
 //            @Override

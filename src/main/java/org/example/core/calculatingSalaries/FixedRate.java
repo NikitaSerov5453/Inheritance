@@ -10,7 +10,8 @@ import org.example.core.employees.Human;
 
 public class FixedRate extends CalculatingSalaries {
 
-    private boolean offshore = true;
+    private int tax;
+    private boolean offshore = false;
     private String paymentType = "Фиксированая ставка";
     private int workDay;
     private float salaryInDay;
@@ -20,13 +21,24 @@ public class FixedRate extends CalculatingSalaries {
         this.workDay = workDay;
         this.salaryInDay = salaryInMonth;
     }
-    private int tax() {
-        if (isOffshore()) {
-            return 0;
-        } else if (getHuman().getNumberOfChildren() == 0) {
-            return 25;
+
+    @Override
+    public int tax() {
+        if (getHuman().getNumberOfChildren() == 0) {
+            return this.tax = 25;
         } else {
-            return 20;
+            return this.tax = 20;
+        }
+    }
+
+    @Override
+    public int taxOffshore() {
+        if (isOffshore()) {
+            return this.tax = 0;
+        }else if (getHuman().getNumberOfChildren() == 0) {
+            return this.tax = 25;
+        } else {
+            return this.tax = 20;
         }
     }
 
@@ -39,6 +51,7 @@ public class FixedRate extends CalculatingSalaries {
     public void setOffshore(boolean offshore) {
         this.offshore = offshore;
     }
+
 
     public FixedRate() {
         super();
@@ -59,9 +72,8 @@ public class FixedRate extends CalculatingSalaries {
 
     @Override
     public int getTax() {
-        return tax();
+        return tax;
     }
-
 
     public float workDay() {
         return workDay;

@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="45895bd4-ea74-433c-adc5-81d8aaf90143" name="Changes" comment="4 done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/CalculatingSalaries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/CalculatingSalaries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/FixedRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/FixedRate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/HourlyRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/HourlyRate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/PieceworkRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/PieceworkRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/views/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/views/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

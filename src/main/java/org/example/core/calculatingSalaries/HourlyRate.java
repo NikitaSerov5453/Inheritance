@@ -3,7 +3,7 @@ package org.example.core.calculatingSalaries;
 import org.example.core.employees.Human;
 
 public class HourlyRate extends CalculatingSalaries {
-
+    private int tax;
     private boolean offshore = true;
     private int tugrik = 36;
     private String paymentType = "Почасовая";
@@ -23,13 +23,22 @@ public class HourlyRate extends CalculatingSalaries {
         return paymentType;
     }
 
-    private int tax() {
-        if (isOffshore()) {
-            return 0;
-        } else if (getHuman().getNumberOfChildren() == 0) {
+    public int tax() {
+        if (getHuman().getNumberOfChildren() == 0) {
             return 25;
         } else {
             return 20;
+        }
+    }
+
+    @Override
+    public int taxOffshore() {
+        if (isOffshore()) {
+            return this.tax = 0;
+        }else if (getHuman().getNumberOfChildren() == 0) {
+            return this.tax = 25;
+        } else {
+            return this.tax = 20;
         }
     }
 
@@ -45,8 +54,9 @@ public class HourlyRate extends CalculatingSalaries {
 
     @Override
     public int getTax() {
-        return tax();
+        return tax;
     }
+
 
     public HourlyRate(int hour, float salaryInHour) {
         this.hour = hour;

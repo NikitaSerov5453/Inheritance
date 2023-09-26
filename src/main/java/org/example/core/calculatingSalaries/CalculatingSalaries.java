@@ -40,6 +40,7 @@ public abstract class CalculatingSalaries {
         this.tax = tax;
     }
 
+
     public CalculatingSalaries() {
 
     }
@@ -58,6 +59,18 @@ public abstract class CalculatingSalaries {
 
     public String takeSalaryTugrik() {
         return "";
+    }
+
+    public float takeSalaryOffshore() {
+        return 0;
+    }
+
+    public int tax() {
+        return 0;
+    }
+
+    public int taxOffshore() {
+        return 0;
     }
 
 }

@@ -50,6 +50,24 @@ public class View {
     public void printStuff2(ArrayList<CalculatingSalaries> arrayList) {
         System.out.format("%25s%25s%15s%25s", "ФИО", "Налог", "Сумма", "К оплате(Рубли/Тугрики)\n");
         for (CalculatingSalaries calculatingSalaries : arrayList) {
+            calculatingSalaries.tax();
+            System.out.format("%25s%25s%15s%25s",
+                    calculatingSalaries.getHuman(),
+                    calculatingSalaries.getTax() + "%",
+                    calculatingSalaries.takeSalary(),
+                    calculatingSalaries.takeSalaryTax() +
+                            calculatingSalaries.takeSalaryTugrik() + "\n");
+        }
+    }
+
+    /**
+     * task 5
+     */
+
+    public void printStuff3(ArrayList<CalculatingSalaries> arrayList) {
+        System.out.format("%25s%25s%15s%25s", "ФИО", "Налог", "Сумма", "К оплате(Рубли/Тугрики)\n");
+        for (CalculatingSalaries calculatingSalaries : arrayList) {
+            calculatingSalaries.taxOffshore();
             System.out.format("%25s%25s%15s%25s",
                     calculatingSalaries.getHuman(),
                     calculatingSalaries.getTax() + "%",
