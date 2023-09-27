@@ -4,6 +4,8 @@ import org.example.core.employees.Human;
 
 public abstract class CalculatingSalaries {
 
+    private int prize;
+
     private int tax;
 
     private boolean offshore;
@@ -19,6 +21,7 @@ public abstract class CalculatingSalaries {
     public void setHuman(Human human) {
         this.human = human;
     }
+
 
     public boolean isOffshore() {
         return offshore;
@@ -73,4 +76,7 @@ public abstract class CalculatingSalaries {
         return 0;
     }
 
+    public float takeSalaryPrize() {
+        return 0;
+    }
 }

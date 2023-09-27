@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="45895bd4-ea74-433c-adc5-81d8aaf90143" name="Changes" comment="5 done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/Company.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/MonthlySalary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/MyArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/Operation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/CalculatingSalaries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/CalculatingSalaries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/HourlyRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/core/calculatingSalaries/HourlyRate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/views/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/views/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695735189774</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="5 done">
+      <created>1695736951660</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695736951660</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

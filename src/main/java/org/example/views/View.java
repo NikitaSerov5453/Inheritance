@@ -68,7 +68,7 @@ public class View {
                     calculatingSalaries.getHuman(),
                     calculatingSalaries.getTax() + "%",
                     calculatingSalaries.takeSalary(),
-                    calculatingSalaries.takeSalaryTax() +
+                    calculatingSalaries.takeSalaryPrize() +
                             calculatingSalaries.takeSalaryTugrik() + "\n");
         }
     }

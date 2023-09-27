@@ -3,6 +3,7 @@ package org.example.core.calculatingSalaries;
 import org.example.core.employees.Human;
 
 public class HourlyRate extends CalculatingSalaries {
+    private int prize = 10000;
     private int tax;
     private boolean offshore = true;
     private int tugrik = 36;
@@ -93,5 +94,14 @@ public class HourlyRate extends CalculatingSalaries {
     @Override
     public String takeSalaryTugrik() {
         return "/" + takeSalaryTax() * tugrik;
+    }
+
+    @Override
+    public float takeSalaryPrize() {
+        if (hour >= 200) {
+            return takeSalaryTax() + prize;
+        } else {
+            return takeSalaryTax();
+        }
     }
 }

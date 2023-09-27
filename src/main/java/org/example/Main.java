@@ -43,7 +43,7 @@ public class Main {
         FixedRate fixedRate = employee.fixRateEmployee(human, 15, 3000, true);
         FixedRate fixedRate2 = employee.fixRateEmployee(human4, 15, 3000, false);
         FixedRate fixedRate1 = employee.fixRateEmployee(human1, 14, 5000,false);
-        HourlyRate hourlyRate = employee.hourlyRateEmployee(human2,164, 319.25f, false);
+        HourlyRate hourlyRate = employee.hourlyRateEmployee(human2,201, 319.25f, false);
         PieceworkRate pieceworkRate = employee.pieceworkRate(human3, 5, 10000, true);
 
 
@@ -54,6 +54,9 @@ public class Main {
         System.out.println();
         System.out.println();
         view.printStuffOffshore(Journal.getStaff());
+        System.out.println();
+        System.out.println();
+        view.printStuffPrize(Journal.getStaff());
 
 //        Employee employee1 = employeeMyArray.findMax(new Comparator<Employee>() {
 //            @Override
