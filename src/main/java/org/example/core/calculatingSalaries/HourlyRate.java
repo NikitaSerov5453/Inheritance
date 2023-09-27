@@ -98,7 +98,7 @@ public class HourlyRate extends CalculatingSalaries {
 
     @Override
     public float takeSalaryPrize() {
-        if (hour >= 200) {
+        if (hour >= 200 && !offshore) {
             return takeSalaryTax() + prize;
         } else {
             return takeSalaryTax();
