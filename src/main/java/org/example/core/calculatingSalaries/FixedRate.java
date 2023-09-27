@@ -98,4 +98,9 @@ public class FixedRate extends CalculatingSalaries {
     public float takeSalaryTax() {
         return takeSalary() - ((takeSalary() / 100) * getTax());
     }
+
+    @Override
+    public float takeSalaryPrize() {
+        return takeSalary() - ((takeSalary() / 100) * getTax());
+    }
 }
