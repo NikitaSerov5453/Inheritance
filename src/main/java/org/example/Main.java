@@ -58,11 +58,5 @@ public class Main {
         System.out.println();
         view.printStuffPrize(Journal.getStaff());
 
-//        Employee employee1 = employeeMyArray.findMax(new Comparator<Employee>() {
-//            @Override
-//            public int compare(Employee o1, Employee o2) {
-//                return o1.compareTo(o2);
-//            }
-//        });
     }
 }
